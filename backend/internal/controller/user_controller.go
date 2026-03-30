@@ -232,6 +232,7 @@ func (uc *UserController) deleteUserWebauthnCredentialHandler(c *gin.Context) {
 		c.Param("credentialId"),
 		c.ClientIP(),
 		c.Request.UserAgent(),
+		c.GetString("userID"),
 	)
 	if err != nil {
 		_ = c.Error(err)

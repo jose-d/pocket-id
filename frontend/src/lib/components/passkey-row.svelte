@@ -38,7 +38,7 @@
 		{/if}
 	</Item.Content>
 	<Item.Actions>
-		{#if showRenameAction}
+		{#if showRenameAction && onRename}
 			<Tooltip.Provider>
 				<Tooltip.Root>
 					<Tooltip.Trigger>
